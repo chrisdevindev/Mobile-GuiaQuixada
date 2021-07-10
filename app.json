@@ -1,9 +1,9 @@
 {
-  "name": "mobile",
-  "displayName": "mobile",
+  "name": "Guia Quixadá",
+  "displayName": "Guia Quixadá",
   "expo": {
-    "name": "mobile",
-    "slug": "mobile",
+    "name": "Guia Quixadá",
+    "slug": "guia-quixada",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
