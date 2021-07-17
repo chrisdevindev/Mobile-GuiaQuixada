@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, Dimensions } from "react-native";
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
@@ -27,7 +27,7 @@ export default StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-
+  
   help: {
     left: wp("32%"),
     top: hp("74%"),
@@ -37,5 +37,11 @@ export default StyleSheet.create({
     fontSize: 9,
     color: "#6ADF22",
     textAlign: "center",
+  },
+
+  map: {
+    width: Dimensions.get("window").width,
+    height: Dimensions.get("window").height,
+    position: "absolute",
   },
 });
