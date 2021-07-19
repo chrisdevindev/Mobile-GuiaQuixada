@@ -1,10 +1,8 @@
 import React from 'react';
-import ScannerCode from './Scanner';
+import AppStack from './src/routes';
 
 export default function App() {
   return (
-    <ScannerCode/>
+    <AppStack />
   );
 }
-
-
