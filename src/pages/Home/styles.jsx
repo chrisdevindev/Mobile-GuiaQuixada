@@ -27,7 +27,7 @@ export default StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  
+
   help: {
     left: wp("32%"),
     top: hp("74%"),
@@ -40,8 +40,8 @@ export default StyleSheet.create({
   },
 
   map: {
-    width: Dimensions.get("window").width,
-    height: Dimensions.get("window").height,
+    width: wp('100%'),
+    height: hp('120%'),
     position: "absolute",
   },
 });

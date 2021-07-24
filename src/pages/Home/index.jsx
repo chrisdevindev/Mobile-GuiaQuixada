@@ -11,8 +11,8 @@ import styles from "./styles";
 function Home() {
   const navigation = useNavigation();
 
-  function linkNavigation() {
-    navigation.navigate("Login");
+  function navigateToScanner() {
+    navigation.navigate("Scanner");
   }
 
   return (
@@ -36,7 +36,7 @@ function Home() {
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              linkNavigation();
+              navigateToScanner();
             }}
           >
             <MaterialIcons name="qr-code-scanner" size={55} color="#6ADF22" />
