@@ -3,7 +3,6 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from "react-native-responsive-screen";
-import Constants from "expo-constants";
 
 export default StyleSheet.create({
   container: {
@@ -16,7 +15,7 @@ export default StyleSheet.create({
     marginHorizontal: 0,
   },
 
-  details:{
+  details: {
     marginHorizontal: 30,
     paddingBottom: 20,
   },
@@ -25,7 +24,6 @@ export default StyleSheet.create({
     backgroundColor: "#fff",
     width: wp("200%"),
     height: hp("10%"),
-    marginBottom: 10,
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
@@ -33,7 +31,6 @@ export default StyleSheet.create({
     },
     shadowOpacity: 30,
     shadowRadius: 50,
-
     elevation: 30,
   },
 
@@ -42,7 +39,7 @@ export default StyleSheet.create({
     fontSize: 25,
     color: "#6ADF22",
     textAlign: "center",
-    fontWeight: "bold"    
+    fontWeight: "bold",
   },
 
   title: {
@@ -51,6 +48,7 @@ export default StyleSheet.create({
     textAlign: "left",
     fontWeight: "bold",
     marginBottom: 20,
+    marginTop: 10,
   },
 
   subtitle: {
@@ -60,19 +58,21 @@ export default StyleSheet.create({
     fontWeight: "bold",
     marginBottom: 20,
   },
-  
-  imgLeao:{
+
+  imgLeao: {
     marginBottom: 20,
     paddingTop: 20,
+    borderRadius: 10,
     width: wp("85%"),
   },
 
-  imgNatal:{
+  imgNatal: {
     paddingTop: 20,
+    borderRadius: 10,
     marginBottom: 20,
     width: wp("85%"),
   },
-  
+
   description: {
     fontSize: 18,
     fontWeight: "normal",
@@ -82,31 +82,34 @@ export default StyleSheet.create({
   },
 
   buttonsContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    justifyContent: "space-between",
   },
 
   button: {
     height: 150,
-    width: '48%',
-    backgroundColor: '#333',
-    borderRadius: 8,
+    width: "48%",
+    backgroundColor: "#333",
+    borderRadius: 10,
     padding: 24,
-    justifyContent: 'space-between',
+    justifyContent: "space-between",
   },
 
   buttonPrimary: {
-    backgroundColor: '#9871f5',
-
+    backgroundColor: "#6ADF22",
   },
 
   buttonSecondary: {
-    backgroundColor: '#04d361',
+    backgroundColor: "#fff",
   },
 
-  buttonText: {
-    // fontFamily: 'Archivo_700Bold',
-    color: '#fff',
+  buttonTextPrimary: {
+    color: "#fff",
+    fontSize: 20,
+  },
+
+  buttonTextSecondary: {
+    color: "#6ADF22",
     fontSize: 20,
   },
 });

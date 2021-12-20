@@ -8,11 +8,14 @@ import {
   View,
 } from "react-native";
 
+import { AntDesign } from "@expo/vector-icons";
+import { Ionicons } from "@expo/vector-icons";
 import styles from "../Info-Details/styles";
-import imgLeao from "../../assets/leao.png";
-import imgNatal from "../../assets/natal.png";
+import imgLeao from "../../assets/images/leao.png";
+import imgNatal from "../../assets/images/natal.png";
 
 function InfoDetails() {
+
   return (
     <>
       <SafeAreaView style={styles.container}>
@@ -46,11 +49,17 @@ function InfoDetails() {
 
             <View style={styles.buttonsContainer}>
               <TouchableOpacity style={[styles.button, styles.buttonPrimary]}>
-                <Text style={styles.buttonText}>Qualquer horário</Text>
+                <Ionicons name="ios-time-outline" size={40} color="#fff" />
+                <Text style={styles.buttonTextPrimary}>Qualquer horário</Text>
               </TouchableOpacity>
 
               <TouchableOpacity style={[styles.button, styles.buttonSecondary]}>
-                <Text style={styles.buttonText}>Local púlico</Text>
+                <Ionicons
+                  name="alert-circle-outline"
+                  size={40}
+                  color="#6ADF22"
+                />
+                <Text style={styles.buttonTextSecondary}>Local púlico</Text>
               </TouchableOpacity>
             </View>
           </View>

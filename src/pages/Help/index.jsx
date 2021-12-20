@@ -1,6 +1,6 @@
 import React from "react";
 import { Image, Modal, Text, View } from "react-native";
-import ScannerDemonstration from "../../assets/Scanner.png";
+import ScannerDemonstration from "../../assets/images/Scanner.png";
 import styles from "./styles";
 
 export default function Help() {
