@@ -7,6 +7,7 @@ import Login from "./pages/Login";
 import Home from "./pages/Home";
 import ScannerCode from "./pages/Scanner";
 import InfoDetails from "./pages/Info-Details";
+import Help from "./pages/Help";
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -19,6 +20,7 @@ function AppStack() {
           <Screen name="Home" component={Home} />
           <Screen name="Scanner" component={ScannerCode} />
           <Screen name="Details" component={InfoDetails} />
+          <Screen name="Help" component={Help} />
         </Navigator>
       </NavigationContainer>
     </>

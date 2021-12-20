@@ -18,6 +18,10 @@ function Home() {
   function linkDetails() {
     navigation.navigate("Details");
   }
+  
+  function navigateToHelp(){
+    navigation.navigate("Help");
+  }
 
   return (
     <>
@@ -52,7 +56,7 @@ function Home() {
               linkDetails();
             }}
           >
-            <AntDesign name="questioncircleo" size={30} color="#6ADF22" />
+            <AntDesign name="questioncircleo" size={30} color="#6ADF22"  onPress={() => navigateToHelp()}/>
             <Text style={styles.helpText}>Ajuda</Text>
           </TouchableOpacity>
         </View>
