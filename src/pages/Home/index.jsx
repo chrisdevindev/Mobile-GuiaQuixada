@@ -15,6 +15,10 @@ function Home() {
     navigation.navigate("Login");
   }
 
+  function linkDetails() {
+    navigation.navigate("Details");
+  }
+
   return (
     <>
       <View style={styles.container}>
@@ -45,7 +49,7 @@ function Home() {
           <TouchableOpacity
             style={styles.help}
             onPress={() => {
-              linkNavigation();
+              linkDetails();
             }}
           >
             <AntDesign name="questioncircleo" size={30} color="#6ADF22" />
