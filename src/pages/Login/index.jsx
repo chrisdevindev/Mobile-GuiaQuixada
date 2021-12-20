@@ -31,8 +31,9 @@ function Login() {
         behavior={Platform.OS == "ios" ? "padding" : "height"}
         style={styles.container}
       >
+        <Image source={logoImg} />
+
         <ScrollView>
-          <Image style={styles.logo} source={logoImg} />
           <View style={styles.content}>
             <View style={styles.top}>
               <Text style={styles.title}>Login:</Text>

@@ -16,8 +16,8 @@ export default StyleSheet.create({
   top: {
     flexDirection: "row",
     alignItems: "center",
-    width: wp('70%'),
-
+    justifyContent: "space-between",
+    width: wp('75%'),
   },
 
   title: {
