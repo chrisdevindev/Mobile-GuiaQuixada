@@ -40,8 +40,8 @@ export default StyleSheet.create({
   },
 
   map: {
-    width: Dimensions.get("window").width,
-    height: Dimensions.get("window").height,
+    width: wp("100%"),
+    height: hp("110%"),
     position: "absolute",
   },
 });

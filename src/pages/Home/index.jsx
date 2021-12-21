@@ -15,6 +15,14 @@ function Home() {
     navigation.navigate("Login");
   }
 
+  function linkDetails() {
+    navigation.navigate("Details");
+  }
+  
+  function navigateToHelp(){
+    navigation.navigate("Help");
+  }
+
   return (
     <>
       <View style={styles.container}>
@@ -45,10 +53,10 @@ function Home() {
           <TouchableOpacity
             style={styles.help}
             onPress={() => {
-              linkNavigation();
+              linkDetails();
             }}
           >
-            <AntDesign name="questioncircleo" size={30} color="#6ADF22" />
+            <AntDesign name="questioncircleo" size={30} color="#6ADF22"  onPress={() => navigateToHelp()}/>
             <Text style={styles.helpText}>Ajuda</Text>
           </TouchableOpacity>
         </View>
